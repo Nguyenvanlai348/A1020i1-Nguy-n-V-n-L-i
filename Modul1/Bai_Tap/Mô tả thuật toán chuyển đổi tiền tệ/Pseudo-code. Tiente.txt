@@ -1,0 +1,6 @@
+Begin 
+int usd, vnd 
+prinft ( " nh?p s? ti?n dô la M? : ") 
+scanf ( usd) 
+vnd = usd * 23000
+printf ( " S? ti?n Vi?t Nam d?ng tuong ?ng là : " , vnd )

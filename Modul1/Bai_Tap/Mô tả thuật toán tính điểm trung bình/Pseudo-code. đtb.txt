@@ -1,0 +1,12 @@
+Begin 
+int a, b, c , dtb
+printf (" nh?p di?m môn toán ")
+scanf(a)
+printf (" nh?p di?m môn Lý  ")
+scanf(b)
+printf (" nh?p di?m môn Hóa ")
+scanf(c)
+dtb = ( a + b + c ) / 3
+printf( " Ði?m trung bình là : " , dtb )
+
+
