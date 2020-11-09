@@ -1,0 +1,17 @@
+begin 
+int diem 
+sprinf (" Nhap diem cua sinh vien : " )
+scanf ( diem )
+if (diem => 75)
+    {
+        printf( Loai A );
+    }else if (60 <= diem < 75){
+        printf( Loai B );
+    }else if(45 <= diem < 60){
+        printf( Loai C );
+    }else if(35 <= diem < 45 ){
+        printf( Loai D );
+    }else if( diem < 35 ){
+        printf( Loai E );
+    }
+end 
