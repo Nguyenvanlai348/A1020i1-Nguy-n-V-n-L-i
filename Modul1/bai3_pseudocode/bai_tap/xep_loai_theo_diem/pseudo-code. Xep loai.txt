@@ -5,7 +5,7 @@ scanf ( diem )
 if (diem => 75)
     {
         printf( Loai A );
-    }else if (60 <= diem < 75){
+    }else if (60 <= diem ){
         printf( Loai B );
     }else if(45 <= diem < 60){
         printf( Loai C );
