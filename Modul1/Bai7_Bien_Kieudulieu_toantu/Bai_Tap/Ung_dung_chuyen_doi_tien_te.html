@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+<table>
+    <tr >
+       <td>
+           <label style="font-weight: bold">Amount</label>
+       </td>
+        <td>
+            <label style="font-weight: bold "> From Currency</label>
+        </td>
+        <td>
+            <label style="font-weight: bold"> To Currency</label>
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id = "tien">
+        </td>
+        <td>
+            <select style="width: 200px" id="tien1">
+                <option value="VND">VietNam</option>
+                <option value="USD" >USD</option>
+            </select>
+        </td>
+        <td>
+            <select style="width: 200px" id="tien2" >
+                <option value="USD" >USD</option>
+                <option value="VND">VND</option>
+            </select>
+        </td>
+        <td>
+            <button style="color:white ; background: blue" onclick="chuyentien()">Convert</button>
+        </td>
+    </tr>
+</table>
+<div id="abc"></div>
+<script>
+        function chuyentien() {
+            var a = document.getElementById("tien").value;
+            var b = document.getElementById("tien1").value;
+            var c = document.getElementById("tien2").value;
+            if (b==c) {document.getElementById('abc').innerHTML = "Result: " + (Number(a)) + ' ' + c}
+        else if (b=="VND" && c=="USD") {
+            document.getElementById('abc').innerHTML = "Result: " + (Number(a)/23000) + ' ' + c
+        }
+        else document.getElementById('abc').innerHTML = "Result: " + (Number(a)*23000) + ' ' + c
+    }
+</script>
+
+
+</body>
+</html>
