@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị 20 số nguyên tố đầu tiên</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("input"));
+    count1 = 0;
+    N = 2;
+    count2 = 0;
+    while (num > count2) {
+        for (let i = 2; i < N; i++) {
+            if (N % i == 0) {
+                count1++;
+            }
+        }
+        if (count1 == 0) {
+            console.log(N)
+            count2++;
+        }
+        count1 = 0;
+
+        N++;
+    }
+
+</script>
+</body>
+</html>
