@@ -2,9 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>quản lí khu nghỉ dưỡng Furama</title>
 </head>
 <body>
-$END$
+<script>
+    let name = "lại";
+    let cmnd = "23455225";
+    let birthday = "29/07/1998";
+    let email = 'addadadad@đa.com';
+    let address = "Quang Nam";
+    let typeService = "vilaa";
+    let typerRoom = "vip";
+    let typeCustomer = "Diamon";
+    let discount = 10;
+    let quantityIclude = 10;
+    let rendDays = 10;
+    let totalPay;
+
+    let choose = parseInt(prompt("1. Hiển thị thông tin khách hàng. " + " \n" +
+        "2. Chỉnh sửa thông tin khách hàng" + "\n" +
+        "3. Hiển thị giá sau khi được giảm giá. "))
+
+    switch (choose) {
+        case 1:
+            alert("tên" + " " + name + "\n" +
+                "cmnd" + " " + cmnd + "\n" +
+                "ngày sinh" + " " + birthday + "\n" +
+                "email" + " " + email + "\n" +
+                "Địa chỉ" + " " + address + "\n" +
+                "loại dịch vụ" + " " + typeService + "\n" +
+                "loại phòng" + " " + typerRoom + "\n" +
+                "loại khách hàng" + " " + typeCustomer + "\n" +
+                "giảm giá" + " " + discount + "\n" +
+                "số lượng đi kèm" + " " + quantityIclude + "\n" +
+                "số lượng ngày" + " " + rendDays)
+            break;
+        case 2:
+            let chooseEdit = parseInt(prompt("1. tên" + " " + name + "\n" +
+                "2. cmnd" + " " + cmnd + "\n" +
+                "3. ngày sinh" + " " + birthday + "\n" +
+                "4. email" + " " + email + "\n" +
+                "5. Địa chỉ" + " " + address + "\n" +
+                "6. loại dịch vụ" + " " + typeService + "\n" +
+                "7. loại phòng" + " " + typerRoom + "\n" +
+                "8. loại khách hàng" + " " + typeCustomer + "\n" +
+                "9. giảm giá" + " " + discount + "\n" +
+                "10. số lượng đi kèm" + " " + quantityIclude + "\n" +
+                "11. số lượng ngày" + " " + rendDays))
+            switch (chooseEdit) {
+                case 1:
+                    name = prompt("enter name");
+                    break;
+
+
+            }
+            alert("tên" + " " + name + "\n" +
+                "cmnd" + " " + cmnd + "\n" +
+                "ngày sinh" + " " + birthday + "\n" +
+                "email" + " " + email + "\n" +
+                "Địa chỉ" + " " + address + "\n" +
+                "loại dịch vụ" + " " + typeService + "\n" +
+                "loại phòng" + " " + typerRoom + "\n" +
+                "loại khách hàng" + " " + typeCustomer + "\n" +
+                "giảm giá" + " " + discount + "\n" +
+                "số lượng đi kèm" + " " + quantityIclude + "\n" +
+                "số lượng ngày" + " " + rendDays)
+            break;
+
+
+
+    }
+</script>
 </body>
 </html>
