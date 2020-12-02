@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<script>
+    let count=0;
+    let input = prompt("nhập từ cần tra cứu");
+    let a = ["oranges","banana","tangerine","grapefruit","mango,guava"];
+    let b = ["cam","chuối","quýt", "bưởi", "xoài", "ổi"]
+    for(let i=0; i<a.length;i++) {
+        if (input == a[i]) {
+            document.write(a[i] + " " + "nghĩa là" + " " + b[i])
+            count++;
+        }
+    }if(count==0){
+
+        document.write("không tìm thấy từ vừa tra cứu")
+    }
+
+</script>
+</body>
+</html>
